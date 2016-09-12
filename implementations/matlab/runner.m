@@ -25,7 +25,7 @@ elapsed = toc();
 realpart = out(1:2:n-1);
 
 % Make sure we get two significant frequencies
-important_freqs = realpart > 2;
+important_freqs = realpart > 0.1;
 %disp(sum(important_freqs));
 
 % Extract the signal amplitudes for both
